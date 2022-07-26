@@ -11,7 +11,7 @@ import SwiftUI
 struct COSC2658_Assignment1App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GameView(game: games[0])
         }
     }
 }
