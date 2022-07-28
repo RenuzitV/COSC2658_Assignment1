@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F125FD552892665E00D5D475 /* Terraria in Resources */ = {isa = PBXBuildFile; fileRef = F125FD542892665E00D5D475 /* Terraria */; };
-		F125FD5728926FFD00D5D475 /* PinchZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F125FD5628926FFD00D5D475 /* PinchZoomView.swift */; };
 		F12BA880288FD99700D76613 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12BA87F288FD99700D76613 /* TextView.swift */; };
 		F14D8A8B288F9E9300350508 /* COSC2658_Assignment1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D8A8A288F9E9300350508 /* COSC2658_Assignment1App.swift */; };
 		F14D8A8F288F9E9400350508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14D8A8E288F9E9400350508 /* Assets.xcassets */; };
@@ -20,6 +18,7 @@
 		F14D8AB7288FADD900350508 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D8AB6288FADD900350508 /* Game.swift */; };
 		F14D8AB9288FAEA600350508 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D8AB8288FAEA600350508 /* ModelData.swift */; };
 		F1F5596E288FFEC400C1D4F4 /* ExDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F5596D288FFEC400C1D4F4 /* ExDivider.swift */; };
+		F1F5597028900A4A00C1D4F4 /* Terraria in Resources */ = {isa = PBXBuildFile; fileRef = F1F5596F28900A4A00C1D4F4 /* Terraria */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +39,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F125FD542892665E00D5D475 /* Terraria */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Terraria; path = COSC2658_Assignment1/Terraria; sourceTree = "<group>"; };
-		F125FD5628926FFD00D5D475 /* PinchZoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchZoomView.swift; sourceTree = "<group>"; };
 		F12BA87F288FD99700D76613 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		F14D8A87288F9E9300350508 /* COSC2658_Assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COSC2658_Assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14D8A8A288F9E9300350508 /* COSC2658_Assignment1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COSC2658_Assignment1App.swift; sourceTree = "<group>"; };
@@ -56,6 +53,7 @@
 		F14D8AB6288FADD900350508 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		F14D8AB8288FAEA600350508 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		F1F5596D288FFEC400C1D4F4 /* ExDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExDivider.swift; sourceTree = "<group>"; };
+		F1F5596F28900A4A00C1D4F4 /* Terraria */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Terraria; path = ../../../../Desktop/Terraria; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +84,6 @@
 		F14D8A7E288F9E9300350508 = {
 			isa = PBXGroup;
 			children = (
-				F125FD542892665E00D5D475 /* Terraria */,
 				F14D8A89288F9E9300350508 /* COSC2658_Assignment1 */,
 				F14D8A9A288F9E9500350508 /* COSC2658_Assignment1Tests */,
 				F14D8AA4288F9E9500350508 /* COSC2658_Assignment1UITests */,
@@ -107,9 +104,9 @@
 		F14D8A89288F9E9300350508 /* COSC2658_Assignment1 */ = {
 			isa = PBXGroup;
 			children = (
+				F1F5596F28900A4A00C1D4F4 /* Terraria */,
 				F14D8A8A288F9E9300350508 /* COSC2658_Assignment1App.swift */,
 				F14D8AB4288FA59F00350508 /* GameView.swift */,
-				F125FD5628926FFD00D5D475 /* PinchZoomView.swift */,
 				F1F5596D288FFEC400C1D4F4 /* ExDivider.swift */,
 				F12BA87F288FD99700D76613 /* TextView.swift */,
 				F14D8AB8288FAEA600350508 /* ModelData.swift */,
@@ -251,7 +248,7 @@
 			files = (
 				F14D8A92288F9E9400350508 /* Preview Assets.xcassets in Resources */,
 				F14D8A8F288F9E9400350508 /* Assets.xcassets in Resources */,
-				F125FD552892665E00D5D475 /* Terraria in Resources */,
+				F1F5597028900A4A00C1D4F4 /* Terraria in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +273,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F125FD5728926FFD00D5D475 /* PinchZoomView.swift in Sources */,
 				F14D8A8B288F9E9300350508 /* COSC2658_Assignment1App.swift in Sources */,
 				F14D8AB9288FAEA600350508 /* ModelData.swift in Sources */,
 				F14D8AB7288FADD900350508 /* Game.swift in Sources */,
