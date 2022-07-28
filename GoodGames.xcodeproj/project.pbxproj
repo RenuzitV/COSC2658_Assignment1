@@ -17,6 +17,7 @@
 		F14D8AB5288FA59F00350508 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D8AB4288FA59F00350508 /* GameView.swift */; };
 		F14D8AB7288FADD900350508 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D8AB6288FADD900350508 /* Game.swift */; };
 		F14D8AB9288FAEA600350508 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D8AB8288FAEA600350508 /* ModelData.swift */; };
+		F1B9D4CB2892ABCD005B013D /* PinchZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B9D4CA2892ABCD005B013D /* PinchZoomView.swift */; };
 		F1F5596E288FFEC400C1D4F4 /* ExDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F5596D288FFEC400C1D4F4 /* ExDivider.swift */; };
 		F1F5597028900A4A00C1D4F4 /* Terraria in Resources */ = {isa = PBXBuildFile; fileRef = F1F5596F28900A4A00C1D4F4 /* Terraria */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		F14D8AB4288FA59F00350508 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		F14D8AB6288FADD900350508 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		F14D8AB8288FAEA600350508 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		F1B9D4CA2892ABCD005B013D /* PinchZoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchZoomView.swift; sourceTree = "<group>"; };
 		F1F5596D288FFEC400C1D4F4 /* ExDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExDivider.swift; sourceTree = "<group>"; };
 		F1F5596F28900A4A00C1D4F4 /* Terraria */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Terraria; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +108,7 @@
 			children = (
 				F1F5596F28900A4A00C1D4F4 /* Terraria */,
 				F14D8A8A288F9E9300350508 /* COSC2658_Assignment1App.swift */,
+				F1B9D4CA2892ABCD005B013D /* PinchZoomView.swift */,
 				F14D8AB4288FA59F00350508 /* GameView.swift */,
 				F1F5596D288FFEC400C1D4F4 /* ExDivider.swift */,
 				F12BA87F288FD99700D76613 /* TextView.swift */,
@@ -273,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1B9D4CB2892ABCD005B013D /* PinchZoomView.swift in Sources */,
 				F14D8A8B288F9E9300350508 /* COSC2658_Assignment1App.swift in Sources */,
 				F14D8AB9288FAEA600350508 /* ModelData.swift in Sources */,
 				F14D8AB7288FADD900350508 /* Game.swift in Sources */,
