@@ -14,9 +14,11 @@ var games: [Game] = [
         shortDescription: "Dig, fight, explore, build! Nothing is impossible in this action-packed adventure game. Four Pack also available!",
         developer: "Re-Logic",
         releaseDate: "2011",
-        reviews: "Overwhelmingly Positive",
+        reviews: "Very Positive",
         price: 120000,
-        genres: "Action, Adventure, Indie, RPG"
+        genres: "Action, Adventure, Indie, RPG",
+        storageCost: 200,
+        score: 82
     )
 ]
 

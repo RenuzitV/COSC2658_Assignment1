@@ -17,6 +17,8 @@ struct Game{
     var reviews: String
     var price: Int
     var genres: String
+    var storageCost: Int = 500
+    var score: Int
     var thumbnailName: String {
         name+"_header"
     }
@@ -24,7 +26,6 @@ struct Game{
         var res: [String] = []
         let paths = Bundle.main.paths(forResourcesOfType: "jpg", inDirectory: "Terraria")
         for path in paths{
-            print(path)
             res.append(path)
         }
         return res

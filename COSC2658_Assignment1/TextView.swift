@@ -6,36 +6,141 @@
 //
 
 import SwiftUI
-
 struct TextView: View {
     var text: String
+    @State var isTruncated: Bool = false
+    @State var forceFullText: Bool = false
     @State var lineLimit = 5
-    var lineLimitMin = 5
+    @State var seeMoreText = "see more"
+    
     var body: some View {
-        //text as button, acts like a "see more" thing
-        Button(
-            action: {
-                if (lineLimit == lineLimitMin){
-                    lineLimit = Int.max
+        Button(action: {
+        if isTruncated && !forceFullText {
+            forceFullText = true
+            lineLimit = Int.max
+            seeMoreText = "see less"
+        }
+        else if forceFullText{
+            forceFullText = false
+            lineLimit = 5
+            seeMoreText = "see more"
+        }
+        }){
+            VStack(alignment: .leading) {
+                TruncableText(
+                    text: textElm,
+                    lineLimit: lineLimit
+                ){
+                    isTruncated = $0
                 }
-                else {
-                    lineLimit = lineLimitMin
-                }
-            }){
-                //text to display
-                Text(text)
                     .multilineTextAlignment(.leading)
-                    .padding()
-                    .lineLimit(lineLimit)
+                    .padding(.horizontal)
                     .font(.body.bold())
                     .foregroundColor(.white)
+                if (isTruncated && !forceFullText ) || (forceFullText) {
+                    Text(seeMoreText)
+                        .foregroundColor(.gray)
+                        .padding(.leading)
+                        .padding(.top, -5)
+                }
+            }
         }
+        .padding(.vertical)
+    }
+    
+    var textElm: Text {
+        Text(text)
+    }
+}
+
+struct SizePreferenceKey: PreferenceKey {
+    static var defaultValue: CGSize = .zero
+    static func reduce(value: inout CGSize, nextValue: () -> CGSize) {}
+}
+
+extension View {
+    func readSize(onChange: @escaping (CGSize) -> Void) -> some View {
+        background(
+            GeometryReader { geometryProxy in
+                Color.clear
+                    .preference(key: SizePreferenceKey.self, value: geometryProxy.size)
+            }
+        )
+            .onPreferenceChange(SizePreferenceKey.self, perform: onChange)
+    }
+}
+
+struct TruncableText: View {
+    let text: Text
+    let lineLimit: Int?
+    @State private var intrinsicSize: CGSize = .zero
+    @State private var truncatedSize: CGSize = .zero
+    let isTruncatedUpdate: (_ isTruncated: Bool) -> Void
+    
+    var body: some View {
+        text
+            .lineLimit(lineLimit)
+            .readSize { size in
+                truncatedSize = size
+                isTruncatedUpdate(truncatedSize != intrinsicSize)
+            }
+            .background(
+                text
+                    .fixedSize(horizontal: false, vertical: true)
+                    .hidden()
+                    .readSize { size in
+                        intrinsicSize = size
+                        isTruncatedUpdate(truncatedSize != intrinsicSize)
+                    }
+            )
     }
 }
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        TextView(text: "Dig, Fight, Explore, Build: The very world is at your fingertips as you fight for survival, fortune, and glory. Will you delve deep into cavernous expanses in search of treasure and raw materials with which to craft ever-evolving gear, machinery, and aesthetics? Perhaps you will choose instead to seek out ever-greater foes to test your mettle in combat? Maybe you will decide to construct your own city to house the host of mysterious allies you may encounter along your travels?\n\nIn the World of Terraria, the choice is yours!\n\nBlending elements of classic action games with the freedom of sandbox-style creativity, Terraria is a unique gaming experience where both the journey and the destination are completely in the player’s control. The Terraria adventure is truly as unique as the players themselves!\n\nAre you up for the monumental task of exploring, creating, and defending a world of your own?")
-            .background(Color(.black).ignoresSafeArea())
+        TextView(text: games[0].description)
+            .background(Color(.black))
+    }
+}
+
+struct LeftAligned: ViewModifier {
+    func body(content: Content) -> some View {
+        HStack {
+            content
+            Spacer()
+        }
+    }
+}
+
+struct RightAligned: ViewModifier {
+    func body(content: Content) -> some View {
+        HStack {
+            Spacer()
+            content
+        }
+    }
+}
+
+struct CenterAligned: ViewModifier {
+    func body(content: Content) -> some View {
+        HStack {
+            Spacer()
+            content
+            Spacer()
+        }
+    }
+}
+
+
+
+extension View {
+    func leftAligned() -> some View {
+        return self.modifier(LeftAligned())
+    }
+    func rightAligned() -> some View {
+        return self.modifier(RightAligned())
+    }
+    func centerAligned() -> some View {
+        return self.modifier(CenterAligned())
     }
 }
