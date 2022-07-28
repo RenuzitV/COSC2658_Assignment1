@@ -53,7 +53,7 @@
 		F14D8AB6288FADD900350508 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		F14D8AB8288FAEA600350508 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		F1F5596D288FFEC400C1D4F4 /* ExDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExDivider.swift; sourceTree = "<group>"; };
-		F1F5596F28900A4A00C1D4F4 /* Terraria */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Terraria; path = ../../../../Desktop/Terraria; sourceTree = "<group>"; };
+		F1F5596F28900A4A00C1D4F4 /* Terraria */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Terraria; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
