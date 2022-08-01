@@ -105,7 +105,8 @@ struct GameView: View {
                 Spacer()
             }
             .padding(.top) //prevents contents from displaying in notch
-            .background(Color(red: 0.092, green: 0.102, blue: 0.128).ignoresSafeArea())
+            .background(Color(red: 0.092, green: 0.102, blue: 0.128))
+            .preferredColorScheme(.dark)
             .foregroundColor(.white)
     }
 }
