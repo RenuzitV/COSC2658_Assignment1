@@ -9,11 +9,7 @@ import SwiftUI
 
 struct GameView: View {
     var game: Game
-    @State var lineLimit = 5
-    @State var presentPopup = false
-    @State var lastScaleValue: CGFloat = 1.0
 
-    
     var body: some View {
             ScrollView{
                 //title game name
@@ -38,29 +34,34 @@ struct GameView: View {
                         //horizontal long line
                         ExDivider(width: 1, color: .white, direction: .horizontal)
                             .padding(.horizontal, 10.0)
-                            .frame(width: .infinity)
                         
                         //information
                         //define div as short verticle lines
                         let div = ExDivider(width: 1, color: .gray, direction: .vertical)
                             .frame(height: 35)
-                        
-                        HStack{
-                            //first SmallText has padding otherwise it looks weird
-                            SmallText(text: "Score\n" + String(game.score) + "/100")
-                                .padding(.leading)
-                            div
-                            SmallText(text: "Developer\n" + String(game.developer))
-                            div
-                            SmallText(text: "Space\n" + String(game.storageCost) + " MB")
-                            div
-                            SmallText(text: "User Review\n" + game.reviews)
+                        ScrollView(.horizontal, showsIndicators: false){
+                            HStack{
+                                //first SmallText has padding otherwise it looks weird
+                                SmallText(text: "Score\n" + String(game.score) + "/100")
+                                    .padding(.leading)
+                                div
+                                SmallText(text: "Developer\n" + String(game.developer))
+                                div
+                                if game.storageCost < 1024 {
+                                    SmallText(text: "Space\n" + String(game.storageCost) + " MB")
+                                }
+                                else {
+                                    SmallText(text: "Space\n" + String(game.storageCost/1024) + " GB")
+                                }
+                                div
+                                SmallText(text: "User Review\n" + game.reviews)
+                                    .padding(.trailing)
+                            }
                         }
                         .padding(.vertical, 5.0)
                         
                         ExDivider(width: 1, color: .white, direction: .horizontal)
                             .padding(.horizontal, 10.0)
-                            .frame(width: .infinity)
                     }
                 
                 //gallery
@@ -105,7 +106,7 @@ struct GameView: View {
                 Spacer()
             }
             .padding(.top) //prevents contents from displaying in notch
-            .background(Color(red: 0.092, green: 0.102, blue: 0.128))
+            .background(colorConstants.backgroundColor)
             .preferredColorScheme(.dark)
             .foregroundColor(.white)
     }
@@ -123,8 +124,8 @@ struct SmallText: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct GameView_Preview: PreviewProvider {
     static var previews: some View {
-        GameView(game: games[0])
+        GameView(game: testGame)
     }
 }

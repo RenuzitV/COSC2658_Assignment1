@@ -17,7 +17,17 @@
 		F14D8AB5288FA59F00350508 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D8AB4288FA59F00350508 /* GameView.swift */; };
 		F14D8AB7288FADD900350508 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D8AB6288FADD900350508 /* Game.swift */; };
 		F14D8AB9288FAEA600350508 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D8AB8288FAEA600350508 /* ModelData.swift */; };
-		F1B9D4CB2892ABCD005B013D /* PinchZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B9D4CA2892ABCD005B013D /* PinchZoomView.swift */; };
+		F15C19222898FE8600D3FBBB /* GameRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15C19212898FE8600D3FBBB /* GameRow.swift */; };
+		F15C19242899039F00D3FBBB /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15C19232899039F00D3FBBB /* ColorExtension.swift */; };
+		F15C1926289906BE00D3FBBB /* GameList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15C1925289906BE00D3FBBB /* GameList.swift */; };
+		F1AE1F6828992B9900F1CD56 /* Elden Ring in Resources */ = {isa = PBXBuildFile; fileRef = F1AE1F6728992B9900F1CD56 /* Elden Ring */; };
+		F1AE1F6C28992DFC00F1CD56 /* PinchZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AE1F6B28992DFC00F1CD56 /* PinchZoomView.swift */; };
+		F1AE1F77289931C600F1CD56 /* Stray in Resources */ = {isa = PBXBuildFile; fileRef = F1AE1F75289931C600F1CD56 /* Stray */; };
+		F1AE1F78289931C600F1CD56 /* DEATH STRANDING in Resources */ = {isa = PBXBuildFile; fileRef = F1AE1F76289931C600F1CD56 /* DEATH STRANDING */; };
+		F1AE1F7A289932F200F1CD56 /* Counter-Strike in Resources */ = {isa = PBXBuildFile; fileRef = F1AE1F79289932F200F1CD56 /* Counter-Strike */; };
+		F1AE1F7C289934ED00F1CD56 /* Fallout 4 in Resources */ = {isa = PBXBuildFile; fileRef = F1AE1F7B289934ED00F1CD56 /* Fallout 4 */; };
+		F1AE1F7E2899384A00F1CD56 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1AE1F7D2899384A00F1CD56 /* Launch Screen.storyboard */; };
+		F1AE1F8228993A0D00F1CD56 /* two-crossed-swords-icon-vector-12861948-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1AE1F8128993A0D00F1CD56 /* two-crossed-swords-icon-vector-12861948-2.jpg */; };
 		F1F5596E288FFEC400C1D4F4 /* ExDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F5596D288FFEC400C1D4F4 /* ExDivider.swift */; };
 		F1F5597028900A4A00C1D4F4 /* Terraria in Resources */ = {isa = PBXBuildFile; fileRef = F1F5596F28900A4A00C1D4F4 /* Terraria */; };
 /* End PBXBuildFile section */
@@ -53,7 +63,17 @@
 		F14D8AB4288FA59F00350508 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		F14D8AB6288FADD900350508 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		F14D8AB8288FAEA600350508 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
-		F1B9D4CA2892ABCD005B013D /* PinchZoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchZoomView.swift; sourceTree = "<group>"; };
+		F15C19212898FE8600D3FBBB /* GameRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameRow.swift; sourceTree = "<group>"; };
+		F15C19232899039F00D3FBBB /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		F15C1925289906BE00D3FBBB /* GameList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameList.swift; sourceTree = "<group>"; };
+		F1AE1F6728992B9900F1CD56 /* Elden Ring */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Elden Ring"; sourceTree = "<group>"; };
+		F1AE1F6B28992DFC00F1CD56 /* PinchZoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchZoomView.swift; sourceTree = "<group>"; };
+		F1AE1F75289931C600F1CD56 /* Stray */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Stray; path = ../../../../Users/s3878076/Downloads/Stray; sourceTree = "<group>"; };
+		F1AE1F76289931C600F1CD56 /* DEATH STRANDING */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "DEATH STRANDING"; path = "../../../../Users/s3878076/Downloads/DEATH STRANDING"; sourceTree = "<group>"; };
+		F1AE1F79289932F200F1CD56 /* Counter-Strike */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Counter-Strike"; sourceTree = "<group>"; };
+		F1AE1F7B289934ED00F1CD56 /* Fallout 4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Fallout 4"; sourceTree = "<group>"; };
+		F1AE1F7D2899384A00F1CD56 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		F1AE1F8128993A0D00F1CD56 /* two-crossed-swords-icon-vector-12861948-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "two-crossed-swords-icon-vector-12861948-2.jpg"; sourceTree = "<group>"; };
 		F1F5596D288FFEC400C1D4F4 /* ExDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExDivider.swift; sourceTree = "<group>"; };
 		F1F5596F28900A4A00C1D4F4 /* Terraria */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Terraria; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,16 +126,26 @@
 		F14D8A89288F9E9300350508 /* COSC2658_Assignment1 */ = {
 			isa = PBXGroup;
 			children = (
+				F1AE1F7B289934ED00F1CD56 /* Fallout 4 */,
+				F1AE1F79289932F200F1CD56 /* Counter-Strike */,
+				F1AE1F76289931C600F1CD56 /* DEATH STRANDING */,
+				F1AE1F75289931C600F1CD56 /* Stray */,
+				F1AE1F6728992B9900F1CD56 /* Elden Ring */,
 				F1F5596F28900A4A00C1D4F4 /* Terraria */,
 				F14D8A8A288F9E9300350508 /* COSC2658_Assignment1App.swift */,
-				F1B9D4CA2892ABCD005B013D /* PinchZoomView.swift */,
+				F1AE1F6B28992DFC00F1CD56 /* PinchZoomView.swift */,
+				F15C1925289906BE00D3FBBB /* GameList.swift */,
 				F14D8AB4288FA59F00350508 /* GameView.swift */,
+				F15C19212898FE8600D3FBBB /* GameRow.swift */,
+				F15C19232899039F00D3FBBB /* ColorExtension.swift */,
 				F1F5596D288FFEC400C1D4F4 /* ExDivider.swift */,
 				F12BA87F288FD99700D76613 /* TextView.swift */,
 				F14D8AB8288FAEA600350508 /* ModelData.swift */,
 				F14D8AB6288FADD900350508 /* Game.swift */,
 				F14D8A8E288F9E9400350508 /* Assets.xcassets */,
 				F14D8A90288F9E9400350508 /* Preview Content */,
+				F1AE1F7D2899384A00F1CD56 /* Launch Screen.storyboard */,
+				F1AE1F8128993A0D00F1CD56 /* two-crossed-swords-icon-vector-12861948-2.jpg */,
 			);
 			path = COSC2658_Assignment1;
 			sourceTree = "<group>";
@@ -250,8 +280,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F14D8A92288F9E9400350508 /* Preview Assets.xcassets in Resources */,
+				F1AE1F78289931C600F1CD56 /* DEATH STRANDING in Resources */,
+				F1AE1F77289931C600F1CD56 /* Stray in Resources */,
+				F1AE1F7E2899384A00F1CD56 /* Launch Screen.storyboard in Resources */,
 				F14D8A8F288F9E9400350508 /* Assets.xcassets in Resources */,
+				F1AE1F7C289934ED00F1CD56 /* Fallout 4 in Resources */,
+				F1AE1F6828992B9900F1CD56 /* Elden Ring in Resources */,
 				F1F5597028900A4A00C1D4F4 /* Terraria in Resources */,
+				F1AE1F8228993A0D00F1CD56 /* two-crossed-swords-icon-vector-12861948-2.jpg in Resources */,
+				F1AE1F7A289932F200F1CD56 /* Counter-Strike in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,11 +313,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1B9D4CB2892ABCD005B013D /* PinchZoomView.swift in Sources */,
 				F14D8A8B288F9E9300350508 /* COSC2658_Assignment1App.swift in Sources */,
+				F15C19222898FE8600D3FBBB /* GameRow.swift in Sources */,
+				F15C19242899039F00D3FBBB /* ColorExtension.swift in Sources */,
 				F14D8AB9288FAEA600350508 /* ModelData.swift in Sources */,
 				F14D8AB7288FADD900350508 /* Game.swift in Sources */,
 				F14D8AB5288FA59F00350508 /* GameView.swift in Sources */,
+				F1AE1F6C28992DFC00F1CD56 /* PinchZoomView.swift in Sources */,
+				F15C1926289906BE00D3FBBB /* GameList.swift in Sources */,
 				F1F5596E288FFEC400C1D4F4 /* ExDivider.swift in Sources */,
 				F12BA880288FD99700D76613 /* TextView.swift in Sources */,
 			);
@@ -449,6 +489,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -478,6 +519,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

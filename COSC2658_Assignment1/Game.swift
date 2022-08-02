@@ -8,7 +8,8 @@
 import Foundation
 import SwiftUI
 
-struct Game{
+struct Game : Identifiable{
+    var id = UUID()
     var name: String
     var description: String
     var shortDescription: String
@@ -19,12 +20,13 @@ struct Game{
     var genres: String
     var storageCost: Int = 500
     var score: Int
+    var imageFolderName : String
     var thumbnailName: String {
-        name+"_header"
+        imageFolderName+"_header"
     }
     var imagePaths: [String]{
         var res: [String] = []
-        let paths = Bundle.main.paths(forResourcesOfType: "jpg", inDirectory: "Terraria")
+        let paths = Bundle.main.paths(forResourcesOfType: "jpg", inDirectory: imageFolderName)
         for path in paths{
             res.append(path)
         }

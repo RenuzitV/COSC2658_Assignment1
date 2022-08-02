@@ -96,9 +96,9 @@ struct TruncableText: View {
     }
 }
 
-struct SwiftUIView_Previews: PreviewProvider {
+struct TextView_Preview: PreviewProvider {
     static var previews: some View {
-        TextView(text: games[0].description)
+        TextView(text: testGame.description)
             .background(Color(.black))
     }
 }

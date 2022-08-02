@@ -7,11 +7,13 @@
 
 import SwiftUI
 
+
 @main
 struct COSC2658_Assignment1App: App {
     var body: some Scene {
         WindowGroup {
-            GameView(game: games[0])
+            GameList()
         }
     }
 }
+
