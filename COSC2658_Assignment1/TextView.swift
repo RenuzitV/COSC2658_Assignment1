@@ -15,16 +15,16 @@ struct TextView: View {
     
     var body: some View {
         Button(action: {
-        if isTruncated && !forceFullText {
-            forceFullText = true
-            lineLimit = Int.max
-            seeMoreText = "see less"
-        }
-        else if forceFullText{
-            forceFullText = false
-            lineLimit = 5
-            seeMoreText = "see more"
-        }
+            if isTruncated && !forceFullText {
+                forceFullText = true
+                lineLimit = Int.max
+                seeMoreText = "see less"
+            }
+            else if forceFullText{
+                forceFullText = false
+                lineLimit = 5
+                seeMoreText = "see more"
+            }
         }){
             VStack(alignment: .leading) {
                 TruncableText(
@@ -33,10 +33,10 @@ struct TextView: View {
                 ){
                     isTruncated = $0
                 }
-                    .multilineTextAlignment(.leading)
-                    .padding(.horizontal)
-                    .font(.body.bold())
-                    .foregroundColor(.white)
+                .multilineTextAlignment(.leading)
+                .padding(.horizontal)
+                .font(.body.bold())
+                .foregroundColor(.white)
                 if (isTruncated && !forceFullText ) || (forceFullText) {
                     Text(seeMoreText)
                         .foregroundColor(.gray)
@@ -66,7 +66,7 @@ extension View {
                     .preference(key: SizePreferenceKey.self, value: geometryProxy.size)
             }
         )
-            .onPreferenceChange(SizePreferenceKey.self, perform: onChange)
+        .onPreferenceChange(SizePreferenceKey.self, perform: onChange)
     }
 }
 

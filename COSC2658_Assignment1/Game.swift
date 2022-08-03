@@ -17,7 +17,6 @@ struct Game : Identifiable{
     var releaseDate: String
     var reviews: String
     var price: Int
-    var genres: String
     var storageCost: Int = 500
     var score: Int
     var imageFolderName : String

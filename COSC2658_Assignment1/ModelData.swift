@@ -9,19 +9,18 @@ import Foundation
 import SwiftUI
 
 var testGame =
-    Game(
-        name: "Terraria",
-        description: "Dig, Fight, Explore, Build: The very world is at your fingertips as you fight for survival, fortune, and glory. Will you delve deep into cavernous expanses in search of treasure and raw materials with which to craft ever-evolving gear, machinery, and aesthetics? Perhaps you will choose instead to seek out ever-greater foes to test your mettle in combat? Maybe you will decide to construct your own city to house the host of mysterious allies you may encounter along your travels?\n\nIn the World of Terraria, the choice is yours!\n\nBlending elements of classic action games with the freedom of sandbox-style creativity, Terraria is a unique gaming experience where both the journey and the destination are completely in the player’s control. The Terraria adventure is truly as unique as the players themselves!\n\nAre you up for the monumental task of exploring, creating, and defending a world of your own?",
-        shortDescription: "Dig, fight, explore, build! Nothing is impossible in this action-packed adventure game. Four Pack also available!",
-        developer: "Re-Logic",
-        releaseDate: "2011",
-        reviews: "Very Positive",
-        price: 120000,
-        genres: "Action, Adventure, Indie, RPG",
-        storageCost: 200,
-        score: 82,
-        imageFolderName: "Terraria"
-    )
+Game(
+    name: "Terraria",
+    description: "Dig, Fight, Explore, Build: The very world is at your fingertips as you fight for survival, fortune, and glory. Will you delve deep into cavernous expanses in search of treasure and raw materials with which to craft ever-evolving gear, machinery, and aesthetics? Perhaps you will choose instead to seek out ever-greater foes to test your mettle in combat? Maybe you will decide to construct your own city to house the host of mysterious allies you may encounter along your travels?\n\nIn the World of Terraria, the choice is yours!\n\nBlending elements of classic action games with the freedom of sandbox-style creativity, Terraria is a unique gaming experience where both the journey and the destination are completely in the player’s control. The Terraria adventure is truly as unique as the players themselves!\n\nAre you up for the monumental task of exploring, creating, and defending a world of your own?",
+    shortDescription: "Dig, fight, explore, build! Nothing is impossible in this action-packed adventure game. Four Pack also available!",
+    developer: "Re-Logic",
+    releaseDate: "2011",
+    reviews: "Very Positive",
+    price: 120000,
+    storageCost: 200,
+    score: 82,
+    imageFolderName: "Terraria"
+)
 
 var testGameList = [
     testGame,
@@ -40,7 +39,6 @@ var gamesList: [Game] = [
         releaseDate: "2022",
         reviews: "Very Positive",
         price: 800000,
-        genres: "Action, Adventure, Indie, RPG",
         storageCost: 60*1024,
         score: 94,
         imageFolderName: "Elden Ring"
@@ -53,7 +51,6 @@ var gamesList: [Game] = [
         releaseDate: "2022",
         reviews: "Very Positive",
         price: 265000,
-        genres: "Action, Adventure, Indie, RPG",
         storageCost: 10*1024,
         score: 96,
         imageFolderName: "Stray"
@@ -66,7 +63,6 @@ var gamesList: [Game] = [
         releaseDate: "2022",
         reviews: "Very Positive",
         price: 186000,
-        genres: "Action, Adventure, Indie, RPG",
         storageCost: 80*1024,
         score: 85,
         imageFolderName: "DEATH STRANDING"
@@ -79,7 +75,6 @@ var gamesList: [Game] = [
         releaseDate: "2012",
         reviews: "Very Positive",
         price: 0,
-        genres: "Action, Adventure, Indie, RPG",
         storageCost: 15*1024,
         score: 83,
         imageFolderName: "Counter-Strike"
@@ -92,10 +87,33 @@ var gamesList: [Game] = [
         releaseDate: "2015",
         reviews: "Very Positive",
         price: 450000,
-        genres: "Action, Adventure, Indie, RPG",
         storageCost: 15*1024,
         score: 83,
         imageFolderName: "Fallout 4"
+    ),
+    Game(
+        name: "It Takes Two",
+        description: "Embark on the craziest journey of your life in It Takes Two, a genre-bending platform adventure created purely for co-op. Invite a friend to join for free with Friend’s Pass and work together across a huge variety of gleefully disruptive gameplay challenges. Play as the clashing couple Cody and May, two humans turned into dolls by a magic spell. Together, trapped in a fantastical world where the unpredictable hides around every corner, they are reluctantly challenged with saving their fractured relationship. \n\nMaster unique and connected character abilities in every new level. Help each other across an abundance of unexpected obstacles and laugh-out-loud moments. Kick gangster squirrels’ furry tails, pilot a pair of underpants, DJ a buzzing night club, and bobsleigh through a magical snow globe. Embrace a heartfelt and hilarious story where narrative and gameplay weave into a uniquely metaphorical experience. \n\nIt Takes Two is developed by the award-winning studio Hazelight, the industry leader of cooperative play. They’re about to take you on a wild and wondrous ride where only one thing is for certain: we’re better together.\nKEY FEATURES\nPure co-op perfection — Invite a friend to join for free with Remote Play Together**, and experience a thrilling adventure built purely for two. Choose from couch or online co-op with split-screen play, and face ever-changing challenges where working together is the only way forward.\n\nGleefully disruptive gameplay — From rampaging vacuum cleaners to suave love gurus, you never know what you’ll be up against next. Filled with genre-bending challenges and new character abilities to master in every level, experience a metaphorical merging of gameplay and narrative that pushes the boundaries of interactive storytelling. \n\nA universal tale of relationships — Discover a touching and heartfelt story of the challenges in getting along. Help Cody and May learn how to overcome their differences. Meet a diverse cast of strange and endearing characters. Join forces and go on an adventure you’ll treasure — together!",
+        shortDescription: "Embark on the craziest journey of your life in It Takes Two. Invite a friend to join for free with Friend’s Pass and work together across a huge variety of gleefully disruptive gameplay challenges. Winner of GAME OF THE YEAR at the Game Awards 2021.",
+        developer: "Hazelight",
+        releaseDate: "2021",
+        reviews: "Very Positive",
+        price: 395000,
+        storageCost: 50*1024,
+        score: 89,
+        imageFolderName: "It Takes Two"
+    ),
+    Game(
+        name: "Red Dead Redemption 2",
+        description: "America, 1899.\n\nArthur Morgan and the Van der Linde gang are outlaws on the run. With federal agents and the best bounty hunters in the nation massing on their heels, the gang must rob, steal and fight their way across the rugged heartland of America in order to survive. As deepening internal divisions threaten to tear the gang apart, Arthur must make a choice between his own ideals and loyalty to the gang who raised him.\n\nNow featuring additional Story Mode content and a fully-featured Photo Mode, Red Dead Redemption 2 also includes free access to the shared living world of Red Dead Online, where players take on an array of roles to carve their own unique path on the frontier as they track wanted criminals as a Bounty Hunter, create a business as a Trader, unearth exotic treasures as a Collector or run an underground distillery as a Moonshiner and much more.\n\nWith all new graphical and technical enhancements for deeper immersion, Red Dead Redemption 2 for PC takes full advantage of the power of the PC to bring every corner of this massive, rich and detailed world to life including increased draw distances; higher quality global illumination and ambient occlusion for improved day and night lighting; improved reflections and deeper, higher resolution shadows at all distances; tessellated tree textures and improved grass and fur textures for added realism in every plant and animal.\n\nRed Dead Redemption 2 for PC also offers HDR support, the ability to run high-end display setups with 4K resolution and beyond, multi-monitor configurations, widescreen configurations, faster frame rates and more.\nMATURE CONTENT DESCRIPTION\n\nThe developers describe the content like this:\n\nThis Game may contain content not appropriate for all ages, or may not be appropriate for viewing at work: General Mature Content",
+        shortDescription: "Winner of over 175 Game of the Year Awards and recipient of over 250 perfect scores, RDR2 is the epic tale of outlaw Arthur Morgan and the infamous Van der Linde gang, on the run across America at the dawn of the modern age. Also includes access to the shared living world of Red Dead Online.",
+        developer: "Rockstar Games",
+        releaseDate: "2019",
+        reviews: "Very Positive",
+        price: 500000,
+        storageCost: 150*1024,
+        score: 93,
+        imageFolderName: "Red Dead Redemption 2"
     )
 ]
 

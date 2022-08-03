@@ -28,6 +28,11 @@
 		F1AE1F7C289934ED00F1CD56 /* Fallout 4 in Resources */ = {isa = PBXBuildFile; fileRef = F1AE1F7B289934ED00F1CD56 /* Fallout 4 */; };
 		F1AE1F7E2899384A00F1CD56 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1AE1F7D2899384A00F1CD56 /* Launch Screen.storyboard */; };
 		F1AE1F8228993A0D00F1CD56 /* two-crossed-swords-icon-vector-12861948-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1AE1F8128993A0D00F1CD56 /* two-crossed-swords-icon-vector-12861948-2.jpg */; };
+		F1BFC995289A8950003AD42E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BFC990289A894F003AD42E /* MainView.swift */; };
+		F1BFC996289A8950003AD42E /* Red Dead Redemption 2 in Resources */ = {isa = PBXBuildFile; fileRef = F1BFC991289A894F003AD42E /* Red Dead Redemption 2 */; };
+		F1BFC997289A8950003AD42E /* PersonalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BFC992289A8950003AD42E /* PersonalView.swift */; };
+		F1BFC998289A8950003AD42E /* It Takes Two in Resources */ = {isa = PBXBuildFile; fileRef = F1BFC993289A8950003AD42E /* It Takes Two */; };
+		F1BFC999289A8950003AD42E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BFC994289A8950003AD42E /* User.swift */; };
 		F1F5596E288FFEC400C1D4F4 /* ExDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F5596D288FFEC400C1D4F4 /* ExDivider.swift */; };
 		F1F5597028900A4A00C1D4F4 /* Terraria in Resources */ = {isa = PBXBuildFile; fileRef = F1F5596F28900A4A00C1D4F4 /* Terraria */; };
 /* End PBXBuildFile section */
@@ -74,6 +79,11 @@
 		F1AE1F7B289934ED00F1CD56 /* Fallout 4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Fallout 4"; sourceTree = "<group>"; };
 		F1AE1F7D2899384A00F1CD56 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F1AE1F8128993A0D00F1CD56 /* two-crossed-swords-icon-vector-12861948-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "two-crossed-swords-icon-vector-12861948-2.jpg"; sourceTree = "<group>"; };
+		F1BFC990289A894F003AD42E /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F1BFC991289A894F003AD42E /* Red Dead Redemption 2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Red Dead Redemption 2"; sourceTree = "<group>"; };
+		F1BFC992289A8950003AD42E /* PersonalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalView.swift; sourceTree = "<group>"; };
+		F1BFC993289A8950003AD42E /* It Takes Two */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "It Takes Two"; sourceTree = "<group>"; };
+		F1BFC994289A8950003AD42E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F1F5596D288FFEC400C1D4F4 /* ExDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExDivider.swift; sourceTree = "<group>"; };
 		F1F5596F28900A4A00C1D4F4 /* Terraria */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Terraria; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +136,8 @@
 		F14D8A89288F9E9300350508 /* COSC2658_Assignment1 */ = {
 			isa = PBXGroup;
 			children = (
+				F1BFC991289A894F003AD42E /* Red Dead Redemption 2 */,
+				F1BFC993289A8950003AD42E /* It Takes Two */,
 				F1AE1F7B289934ED00F1CD56 /* Fallout 4 */,
 				F1AE1F79289932F200F1CD56 /* Counter-Strike */,
 				F1AE1F76289931C600F1CD56 /* DEATH STRANDING */,
@@ -137,6 +149,9 @@
 				F15C1925289906BE00D3FBBB /* GameList.swift */,
 				F14D8AB4288FA59F00350508 /* GameView.swift */,
 				F15C19212898FE8600D3FBBB /* GameRow.swift */,
+				F1BFC990289A894F003AD42E /* MainView.swift */,
+				F1BFC992289A8950003AD42E /* PersonalView.swift */,
+				F1BFC994289A8950003AD42E /* User.swift */,
 				F15C19232899039F00D3FBBB /* ColorExtension.swift */,
 				F1F5596D288FFEC400C1D4F4 /* ExDivider.swift */,
 				F12BA87F288FD99700D76613 /* TextView.swift */,
@@ -279,12 +294,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1BFC996289A8950003AD42E /* Red Dead Redemption 2 in Resources */,
 				F14D8A92288F9E9400350508 /* Preview Assets.xcassets in Resources */,
 				F1AE1F78289931C600F1CD56 /* DEATH STRANDING in Resources */,
 				F1AE1F77289931C600F1CD56 /* Stray in Resources */,
 				F1AE1F7E2899384A00F1CD56 /* Launch Screen.storyboard in Resources */,
 				F14D8A8F288F9E9400350508 /* Assets.xcassets in Resources */,
 				F1AE1F7C289934ED00F1CD56 /* Fallout 4 in Resources */,
+				F1BFC998289A8950003AD42E /* It Takes Two in Resources */,
 				F1AE1F6828992B9900F1CD56 /* Elden Ring in Resources */,
 				F1F5597028900A4A00C1D4F4 /* Terraria in Resources */,
 				F1AE1F8228993A0D00F1CD56 /* two-crossed-swords-icon-vector-12861948-2.jpg in Resources */,
@@ -313,6 +330,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1BFC999289A8950003AD42E /* User.swift in Sources */,
+				F1BFC997289A8950003AD42E /* PersonalView.swift in Sources */,
 				F14D8A8B288F9E9300350508 /* COSC2658_Assignment1App.swift in Sources */,
 				F15C19222898FE8600D3FBBB /* GameRow.swift in Sources */,
 				F15C19242899039F00D3FBBB /* ColorExtension.swift in Sources */,
@@ -320,6 +339,7 @@
 				F14D8AB7288FADD900350508 /* Game.swift in Sources */,
 				F14D8AB5288FA59F00350508 /* GameView.swift in Sources */,
 				F1AE1F6C28992DFC00F1CD56 /* PinchZoomView.swift in Sources */,
+				F1BFC995289A8950003AD42E /* MainView.swift in Sources */,
 				F15C1926289906BE00D3FBBB /* GameList.swift in Sources */,
 				F1F5596E288FFEC400C1D4F4 /* ExDivider.swift in Sources */,
 				F12BA880288FD99700D76613 /* TextView.swift in Sources */,

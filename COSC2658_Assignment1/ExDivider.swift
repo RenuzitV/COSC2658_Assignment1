@@ -18,10 +18,10 @@ struct ExDivider: View {
                 .fill(color)
                 .applyIf(direction == .vertical) {
                     $0.frame(width: width)
-                    .edgesIgnoringSafeArea(.vertical)
+                        .edgesIgnoringSafeArea(.vertical)
                 } else: {
                     $0.frame(height: width)
-                    .edgesIgnoringSafeArea(.horizontal)
+                        .edgesIgnoringSafeArea(.horizontal)
                 }
         }
     }
