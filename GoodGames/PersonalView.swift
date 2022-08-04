@@ -9,6 +9,7 @@
  Last modified: 04/08/2022.
  Acknowledgement:
  https://peterfriese.dev/posts/swiftui-listview-part3/
+ https://www.hackingwithswift.com/quick-start/swiftui/how-to-let-users-delete-rows-from-a-list
  */
 import SwiftUI
 
@@ -106,15 +107,18 @@ struct PersonalView: View {
             //owned games
             //will refactor with GameList later on (hopefully)
             NavigationView{
-                List(user.ownedGames){ game in
-                    HStack{
-                        GameRow(game: game)
-                        Spacer()
+                List{
+                    ForEach(user.ownedGames){ game in
+                        HStack{
+                            GameRow(game: game)
+                            Spacer()
+                        }
+                        .padding(.leading, -15)
+                        .padding(.trailing, -25)
+                        .listRowBackground(colorConstants.backgroundColor)
+                        .listRowSeparatorTint(.gray)
                     }
-                    .padding(.leading, -15)
-                    .padding(.trailing, -25)
-                    .listRowBackground(colorConstants.backgroundColor)
-                    .listRowSeparatorTint(.gray)
+                    .onDelete(perform: delete)
                 }
                 .searchable(text: $searchText)
                 .foregroundColor(.white)
@@ -129,6 +133,9 @@ struct PersonalView: View {
         .foregroundColor(.white)
     }
     
+    func delete(at offsets: IndexSet) {
+        user.ownedGames.remove(atOffsets: offsets)
+    }
     var searchResults: [Game] {
         if searchText.isEmpty {
             return user.ownedGames
