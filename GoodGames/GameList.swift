@@ -1,9 +1,16 @@
-//
-//  GameList.swift
-//  COSC2658_Assignment1
-//
-//  Created by Duy Nguyen Vu Minh on 02/08/2022.
-//
+/*
+ RMIT University Vietnam
+ Course: COSC2659 iOS Development
+ Semester: 2022B
+ Assessment: Assignment 1
+ Author: Nguyen Vu Minh Duy
+ ID: s3878076
+ Created  date: 02/08/2022.
+ Last modified: 04/08/2022.
+ Acknowledgement:
+ https://peterfriese.dev/posts/swiftui-listview-part3/
+ https://www.hackingwithswift.com/quick-start/swiftui/how-to-add-a-search-bar-to-filter-your-data
+ */
 
 import SwiftUI
 
@@ -12,22 +19,25 @@ struct GameList: View {
     var background = UIColor(colorConstants.backgroundColor)
     @State private var searchText = ""
     
+    //setup colors for view
     init(gameList: [Game]) {
         self.games = gamesList
-        UITableView.appearance().backgroundColor = UIColor(colorConstants.backgroundColor)
-        UINavigationBar.appearance().barTintColor = UIColor(colorConstants.backgroundColor)
+        UITableView.appearance().backgroundColor = background
+        UINavigationBar.appearance().barTintColor = background
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor(.white)]
         UINavigationBar.appearance().titleTextAttributes = [.foregroundColor : UIColor.white]
-        UITabBar.appearance().barTintColor = UIColor(colorConstants.backgroundColor)
+        UITabBar.appearance().barTintColor = background
     }
     
     var body: some View {
         NavigationView{
+            //make a list of games that match the search bar query
             List(searchResults){ game in
                 HStack{
                     GameRow(game: game)
                     Spacer()
                 }
+                //puts a NavLink in the background to redirect users towards the detailed view of that game
                 .background(
                     NavigationLink(destination: GameView(game: game)){}
                         .opacity(0)
@@ -37,6 +47,7 @@ struct GameList: View {
                 .listRowBackground(colorConstants.backgroundColor)
                 .listRowSeparatorTint(.gray)
             }
+            //append search bar
             .searchable(text: $searchText)
             .foregroundColor(.white)
             .listStyle(.grouped)
@@ -44,9 +55,11 @@ struct GameList: View {
                 "GoodGames"
             )
         }
+        .navigationViewStyle(StackNavigationViewStyle())
         .padding(.bottom, -10)
     }
     
+    //searches for games with matching name, case-insensitive, returns all if not used
     var searchResults: [Game] {
         if searchText.isEmpty {
             return games
@@ -60,6 +73,6 @@ struct GameList: View {
 struct GameList_Previews: PreviewProvider {
     static var previews: some View {
         GameList(gameList: gamesList)
-            .previewInterfaceOrientation(.portrait)
+            .environmentObject(User())
     }
 }

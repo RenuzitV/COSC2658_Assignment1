@@ -1,10 +1,15 @@
-//
-//  PersonalView.swift
-//  COSC2658_Assignment1
-//
-//  Created by Duy Nguyen Vu Minh on 03/08/2022.
-// reference: https://stackoverflow.com/questions/56726663/how-to-add-a-textfield-to-alert-in-swiftui
-
+/*
+ RMIT University Vietnam
+ Course: COSC2659 iOS Development
+ Semester: 2022B
+ Assessment: Assignment 1
+ Author: Nguyen Vu Minh Duy
+ ID: s3878076
+ Created  date: 02/08/2022.
+ Last modified: 04/08/2022.
+ Acknowledgement:
+ https://peterfriese.dev/posts/swiftui-listview-part3/
+ */
 import SwiftUI
 
 struct PersonalView: View {
@@ -13,7 +18,6 @@ struct PersonalView: View {
     @State private var searchText = ""
     @State private var tempString : String = ""
     @State private var isEditingUsername = false
-    
     
     init() {
         UITableView.appearance().backgroundColor = UIColor(colorConstants.backgroundColor)
@@ -25,12 +29,13 @@ struct PersonalView: View {
     
     var body: some View {
         VStack{
+            //Username
             HStack{
                 if (!isEditingUsername){
                     HStack{
                         Text("Hi, " + user.name)
                             .font(.title)
-                    
+                        
                         Spacer()
                         
                         Button(action:{
@@ -80,7 +85,9 @@ struct PersonalView: View {
                 Spacer()
             }
             .padding(20)
+            //username
             
+            //balance
             HStack{
                 Text("Balance: " + String(user.balance))
                     .font(.title3)
@@ -94,7 +101,10 @@ struct PersonalView: View {
             }
             .leftAligned()
             .padding(20)
+            //balance
             
+            //owned games
+            //will refactor with GameList later on (hopefully)
             NavigationView{
                 List(user.ownedGames){ game in
                     HStack{
@@ -112,7 +122,9 @@ struct PersonalView: View {
                 .navigationTitle("Owned Games")
                 .foregroundColor(.white)
             }
+            //owned games
         }
+        .navigationViewStyle(StackNavigationViewStyle())
         .background(background)
         .foregroundColor(.white)
     }

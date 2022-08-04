@@ -1,10 +1,15 @@
-//
-//  PinchToZoom.swift
-//  COSC2658_Assignment1
-//
-//  Created by Duy Nguyen Vu Minh on 28/07/2022.
-//
-
+/*
+ RMIT University Vietnam
+ Course: COSC2659 iOS Development
+ Semester: 2022B
+ Assessment: Assignment 1
+ Author: Nguyen Vu Minh Duy
+ ID: s3878076
+ Created  date: 28/07/2022.
+ Last modified: 04/08/2022.
+ Acknowledgement:
+ https://stackoverflow.com/questions/58341820/isnt-there-an-easy-way-to-pinch-to-zoom-in-an-image-in-swiftui
+ */
 import Foundation
 import UIKit
 import SwiftUI

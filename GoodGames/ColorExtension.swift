@@ -1,9 +1,15 @@
-//
-//  ColorExtension.swift
-//  COSC2658_Assignment1
-//
-//  Created by Duy Nguyen Vu Minh on 02/08/2022.
-//
+/*
+ RMIT University Vietnam
+ Course: COSC2659 iOS Development
+ Semester: 2022B
+ Assessment: Assignment 1
+ Author: Nguyen Vu Minh Duy
+ ID: s3878076
+ Created  date: 02/08/2022.
+ Last modified: 04/08/2022.
+ Acknowledgement:
+ https://stackoverflow.com/questions/56874133/use-hex-color-in-swiftui
+ */
 
 import Foundation
 import SwiftUI

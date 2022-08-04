@@ -1,9 +1,16 @@
-//
-//  ContentView.swift
-//  COSC2658_Assignment1
-//
-//  Created by Duy Nguyen Vu Minh on 26/07/2022.
-//
+/*
+ RMIT University Vietnam
+ Course: COSC2659 iOS Development
+ Semester: 2022B
+ Assessment: Assignment 1
+ Author: Nguyen Vu Minh Duy
+ ID: s3878076
+ Created  date: 28/07/2022.
+ Last modified: 04/08/2022.
+ Acknowledgement:
+ https://stackoverflow.com/questions/58341820/isnt-there-an-easy-way-to-pinch-to-zoom-in-an-image-in-swiftui
+ */
+
 
 import SwiftUI
 
@@ -22,6 +29,7 @@ struct GameView: View {
                 .multilineTextAlignment(.leading)
                 .padding(.leading, 20.0)
                 .leftAligned()
+            
             //header
             Image(game.thumbnailName)
                 .resizable()
@@ -33,6 +41,7 @@ struct GameView: View {
                 .padding()
                 .font(.body.bold())
             
+            //
             VStack(alignment: .center){
                 //horizontal long line
                 ExDivider(width: 1, color: .white, direction: .horizontal)
@@ -100,6 +109,7 @@ struct GameView: View {
             TextView(text: game.description)
                 .multilineTextAlignment(.leading)
             
+            //buy button
             Button(action: {
                 if (user.balance >= game.price){
                     isDisplayingSheetConfirm.toggle()
@@ -117,23 +127,64 @@ struct GameView: View {
                     .background(.blue)
                     .cornerRadius(10)
             }
+            //checkout page
             .sheet(isPresented: $isDisplayingSheetConfirm){
-                Text("Thank you for buying " + game.name)
-                    .font(.title2)
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.center)
-                    .padding()
+                VStack{
+                    Button(action: {
+                        isDisplayingSheetConfirm.toggle()
+                    }){
+                        Text("Close")
+                            .font(.title3)
+                            .padding(10)
+                            .foregroundColor(.blue)
+                            .cornerRadius(10)
+                    }
+                    .rightAligned()
+                    
+                    Spacer()
+                    
+                    Image(game.thumbnailName)
+                        .resizable()
+                        .frame(width: 400, height: 200)
+                        .cornerRadius(10)
+                    
+                    Text("Thank you for buying " + game.name)
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(.center)
+                        .padding()
+                    
+                    Spacer()
+                }
             }
+            
+            //not enough balance to buy
             .sheet(isPresented: $isDisplayingSheetNotEnoughBalance){
                 VStack{
+                    Button(action: {
+                        isDisplayingSheetNotEnoughBalance.toggle()
+                    }){
+                        Text("Close")
+                            .font(.title3)
+                            .padding(10)
+                            .foregroundColor(.blue)
+                            .cornerRadius(10)
+                    }
+                    .rightAligned()
+                    
+                    Spacer()
+                    
                     Text("You do not have enough balance to buy " + game.name + "!")
                         .font(.title2)
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                         .padding()
-                    Text("Your balance: " + String(user.balance))
+                    
+                    Text("Your balance: " + String(user.balance) + "đ")
                         .font(.title3)
                         .padding()
+                    
+                    Spacer()
                 }
             }
             
@@ -142,25 +193,15 @@ struct GameView: View {
         }
         .padding(.top) //prevents contents from displaying in notch
         .background(colorConstants.backgroundColor)
-        .preferredColorScheme(.dark)
+        .preferredColorScheme(.dark) //force dark mode
         .foregroundColor(.white)
     }
 }
 
-struct SmallText: View {
-    var text: String
-    var body: some View{
-        Text(text)
-            .fontWeight(.thin)
-            .multilineTextAlignment(.center)
-            .padding(.vertical, -10.0)
-            .fixedSize()
-            .font(Font.system(size: 18))
-    }
-}
 
 struct GameView_Preview: PreviewProvider {
     static var previews: some View {
         GameView(game: testGame)
+            .environmentObject(User())
     }
 }
