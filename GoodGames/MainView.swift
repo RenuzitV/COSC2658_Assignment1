@@ -25,7 +25,7 @@ struct MainView: View {
     
     var body: some View {
         TabView {
-            GameList(gameList: gamesList)
+            GameList()
                 .tabItem {
                     Image(systemName: "cart")
                     Text("Games")
@@ -44,5 +44,6 @@ struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
             .environmentObject(User())
+            .environmentObject(GameContainer())
     }
 }	

@@ -22,6 +22,7 @@ struct GameView: View {
     
     var body: some View {
         ScrollView{
+            
             //title game name
             Text(game.name)
                 .font(Font.system(size: 50))
@@ -30,7 +31,7 @@ struct GameView: View {
                 .padding(.leading, 20.0)
                 .leftAligned()
             
-            //header
+            //header pic
             Image(game.thumbnailName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
@@ -41,13 +42,15 @@ struct GameView: View {
                 .padding()
                 .font(.body.bold())
             
-            //
+            // dev & game technical info
             VStack(alignment: .center){
+                
                 //horizontal long line
                 ExDivider(width: 1, color: .white, direction: .horizontal)
                     .padding(.horizontal, 10.0)
                 
                 //information
+                
                 //define div as short verticle lines
                 let div = ExDivider(width: 1, color: .gray, direction: .vertical)
                     .frame(height: 45)
@@ -70,10 +73,12 @@ struct GameView: View {
                         div
                         SmallText(text: "User Review\n" + game.reviews)
                             .padding(.trailing)
+                        //last SmallText also has padding
                     }
                 }
                 .padding(.vertical, 2.0)
                 
+                //another horizontal long line
                 ExDivider(width: 1, color: .white, direction: .horizontal)
                     .padding(.horizontal, 10.0)
             }
@@ -127,6 +132,7 @@ struct GameView: View {
                     .background(.blue)
                     .cornerRadius(10)
             }
+            
             //checkout page
             .sheet(isPresented: $isDisplayingSheetConfirm){
                 VStack{
@@ -201,7 +207,7 @@ struct GameView: View {
 
 struct GameView_Preview: PreviewProvider {
     static var previews: some View {
-        GameView(game: testGame)
+        GameView(game: gameList[0])
             .environmentObject(User())
     }
 }

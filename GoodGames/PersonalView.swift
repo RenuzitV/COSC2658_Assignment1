@@ -24,7 +24,7 @@ struct PersonalView: View {
         UINavigationBar.appearance().barTintColor = UIColor(colorConstants.backgroundColor)
         UINavigationBar.appearance().titleTextAttributes = [.foregroundColor : UIColor.white]
         UITabBar.appearance().barTintColor = UIColor(colorConstants.backgroundColor)
-        //        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor(.white), .font: UIFont.systemFont(ofSize: 20)]
+        //UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor(.white), .font: UIFont.systemFont(ofSize: 20)]
     }
     
     var body: some View {

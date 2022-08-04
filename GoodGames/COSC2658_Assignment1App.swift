@@ -20,6 +20,7 @@ struct COSC2658_Assignment1App: App {
         WindowGroup {
             MainView()
                 .environmentObject(User())
+                .environmentObject(GameContainer())
         }
     }
 }

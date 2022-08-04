@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F10AFF2C289BB39A006F7542 /* gameData.json in Resources */ = {isa = PBXBuildFile; fileRef = F10AFF2B289BB39A006F7542 /* gameData.json */; };
+		F10AFF2E289BC3BF006F7542 /* userData.json in Resources */ = {isa = PBXBuildFile; fileRef = F10AFF2D289BC3BF006F7542 /* userData.json */; };
 		F12BA880288FD99700D76613 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12BA87F288FD99700D76613 /* TextView.swift */; };
 		F14D8A8B288F9E9300350508 /* COSC2658_Assignment1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D8A8A288F9E9300350508 /* COSC2658_Assignment1App.swift */; };
 		F14D8A8F288F9E9400350508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14D8A8E288F9E9400350508 /* Assets.xcassets */; };
@@ -55,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F10AFF2B289BB39A006F7542 /* gameData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = gameData.json; sourceTree = "<group>"; };
+		F10AFF2D289BC3BF006F7542 /* userData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userData.json; sourceTree = "<group>"; };
 		F12BA87F288FD99700D76613 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		F14D8A87288F9E9300350508 /* GoodGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14D8A8A288F9E9300350508 /* COSC2658_Assignment1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COSC2658_Assignment1App.swift; sourceTree = "<group>"; };
@@ -151,12 +155,14 @@
 				F15C19212898FE8600D3FBBB /* GameRow.swift */,
 				F1BFC990289A894F003AD42E /* MainView.swift */,
 				F1BFC992289A8950003AD42E /* PersonalView.swift */,
-				F1BFC994289A8950003AD42E /* User.swift */,
 				F15C19232899039F00D3FBBB /* ColorExtension.swift */,
 				F1F5596D288FFEC400C1D4F4 /* ExDivider.swift */,
 				F12BA87F288FD99700D76613 /* TextView.swift */,
 				F14D8AB8288FAEA600350508 /* ModelData.swift */,
+				F1BFC994289A8950003AD42E /* User.swift */,
 				F14D8AB6288FADD900350508 /* Game.swift */,
+				F10AFF2D289BC3BF006F7542 /* userData.json */,
+				F10AFF2B289BB39A006F7542 /* gameData.json */,
 				F14D8A8E288F9E9400350508 /* Assets.xcassets */,
 				F14D8A90288F9E9400350508 /* Preview Content */,
 				F1AE1F7D2899384A00F1CD56 /* Launch Screen.storyboard */,
@@ -300,11 +306,13 @@
 				F1AE1F77289931C600F1CD56 /* Stray in Resources */,
 				F1AE1F7E2899384A00F1CD56 /* Launch Screen.storyboard in Resources */,
 				F14D8A8F288F9E9400350508 /* Assets.xcassets in Resources */,
+				F10AFF2E289BC3BF006F7542 /* userData.json in Resources */,
 				F1AE1F7C289934ED00F1CD56 /* Fallout 4 in Resources */,
 				F1BFC998289A8950003AD42E /* It Takes Two in Resources */,
 				F1AE1F6828992B9900F1CD56 /* Elden Ring in Resources */,
 				F1F5597028900A4A00C1D4F4 /* Terraria in Resources */,
 				F1AE1F8228993A0D00F1CD56 /* two-crossed-swords-icon-vector-12861948-2.jpg in Resources */,
+				F10AFF2C289BB39A006F7542 /* gameData.json in Resources */,
 				F1AE1F7A289932F200F1CD56 /* Counter-Strike in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,13 +15,12 @@
 import SwiftUI
 
 struct GameList: View {
-    var games: [Game]
     var background = UIColor(colorConstants.backgroundColor)
     @State private var searchText = ""
+    @EnvironmentObject var gameContainer : GameContainer
     
     //setup colors for view
-    init(gameList: [Game]) {
-        self.games = gamesList
+    init() {
         UITableView.appearance().backgroundColor = background
         UINavigationBar.appearance().barTintColor = background
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor(.white)]
@@ -62,9 +61,9 @@ struct GameList: View {
     //searches for games with matching name, case-insensitive, returns all if not used
     var searchResults: [Game] {
         if searchText.isEmpty {
-            return games
+            return gameContainer.games
         } else {
-            return games.filter { $0.name.localizedCaseInsensitiveContains(searchText) }
+            return gameContainer.games.filter { $0.name.localizedCaseInsensitiveContains(searchText) }
         }
     }
     
@@ -72,7 +71,7 @@ struct GameList: View {
 
 struct GameList_Previews: PreviewProvider {
     static var previews: some View {
-        GameList(gameList: gamesList)
-            .environmentObject(User())
+        GameList()
+            .environmentObject(GameContainer())
     }
 }
